@@ -3,6 +3,12 @@
 这是一个签到天数累计进度展示组件。
 暂对外提供四个props参数，以下是props的默认值
 
+例子查看：
+```
+  yarn install
+  yarn start
+```
+
 ```
 {
       successSignDays: 3, //成功签到天数
