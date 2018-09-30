@@ -1,0 +1,75 @@
+.box {
+  position: relative;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.signDay,
+.basicDay {
+  position: relative;
+  display: inline-block;
+
+  color: #efe1a6;
+  font-size: 10px;
+}
+
+.signDay .day,
+.basicDay .day {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+
+  border-radius: 50%;
+  margin-left: 19px;
+  text-align: center;
+}
+
+.basicDay .day,
+.basicDay .day::before {
+  background: #cc223b;
+}
+
+.basicDay .date {
+  position: absolute;
+  bottom: -14px;
+  right: -5px;
+  width: 30px;
+  text-align: center;
+}
+
+.signDay .day::before,
+.basicDay .day::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  height: 2px;
+  width: 19px;
+}
+
+.signDay:first-child .day,
+.basicDay:first-child .day {
+  margin-left: 0;
+}
+
+.signDay:first-child .day::before,
+.basicDay:first-child .day::before {
+  content: "";
+  width: 0;
+}
+
+.sign {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.signDay .day,
+.signDay .day::before {
+  background: #000;
+}
+
+.signDay.disabled {
+  opacity: 0;
+}
