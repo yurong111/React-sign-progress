@@ -97,9 +97,9 @@ class SignProgress extends React.PureComponent {
   render() {
     let { successSignDays, days } = this.props;
 
-    // if (successSignDays < 0 || days <= 0) {
-    //   return null;
-    // }
+    if (successSignDays < 0) {
+      return null;
+    }
     let signDaysInfo = this.getSignDaysInfo();
     let basicDateInfo = this.getBasicDateInfo(signDaysInfo);
 
