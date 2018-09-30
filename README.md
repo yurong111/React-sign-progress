@@ -11,3 +11,4 @@
       days: 7,            //展示天数
 }
 ```
+![图片](http://p79ehl37l.bkt.clouddn.com/react/signProgress1.png)
